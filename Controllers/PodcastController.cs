@@ -22,9 +22,9 @@ namespace podscribe.Controllers
         }
 
         [HttpGet]
-        public async Task<Podcast> Get()
+        public async Task<Podcasts> Get()
         {
-            return await _podcastSvc.GetPodcast();
+            return await _podcastSvc.GetPodcast("Go Time");
         }
     }
 }

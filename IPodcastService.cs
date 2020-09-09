@@ -4,7 +4,7 @@ namespace podscribe
 {
     public interface IPodcastService
     {
-        Task<Podcast> GetPodcast();
+        Task<Podcasts> GetPodcast(string searchTerm);
     }
 
 }
