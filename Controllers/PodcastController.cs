@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using PodscribeSearch.Podcasts;
 
-namespace podscribe.Controllers
+namespace PodscribeSearch.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -22,7 +20,7 @@ namespace podscribe.Controllers
         }
 
         [HttpGet]
-        public async Task<Podcasts> Get()
+        public async Task<Podcasts.Podcasts> Get()
         {
             return await _podcastSvc.GetPodcast("Go Time");
         }

@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
 
-namespace podscribe
+namespace PodscribeSearch.Podcasts
 {
     public class Podcasts
     {

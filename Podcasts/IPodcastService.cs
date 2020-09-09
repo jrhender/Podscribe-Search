@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace podscribe
+namespace PodscribeSearch.Podcasts
 {
     public interface IPodcastService
     {
